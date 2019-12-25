@@ -1,0 +1,115 @@
+body, html {
+  height: 100%
+}
+.card-container { z-index: 999; overflow: hidden; }
+
+.jumbotron {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.header-search form .search-btn, .header-search form .search-youtube {
+  background: #D10024;
+  font-weight: 700;
+}
+
+.input-group > .input-group-append:not(:last-child) > .search-youtube {
+  border-radius: 40px 0px 0px 40px;
+}
+
+.header-search form .search-btn{border-radius: 0px 40px 40px 0px;}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.caption-1 figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.caption-2 figcaption {
+  width: 80%;
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.caption-3 figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
