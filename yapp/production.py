@@ -22,6 +22,9 @@ TEMPLATE_DEBUG = False
 DATABASES['default'] = dj_database_url.config()
 
 # 'django.middleware.security.SecurityMiddleware',
-MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']
+MIDDLEWARE += [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
+]
 
 ALLOWED_HOSTS = ['*']
