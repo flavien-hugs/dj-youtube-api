@@ -27,4 +27,4 @@ MIDDLEWARE += [
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['manipyoutubeapi.herokuapp.com']
