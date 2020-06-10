@@ -36,6 +36,7 @@ def index(request):
             'maxResults' : 8,
             'type' : 'video'
         }
+
         r = requests.get(url_recherche, params=params_recherche)
         resultats = r.json()['items']
 
@@ -69,6 +70,6 @@ def index(request):
             videos.append(detail_video)
 
 
-    template = 'ysearch/index.html'
+    template = 'index.html'
     context = {'videos': videos}
     return render(request, template, context)

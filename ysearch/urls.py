@@ -14,9 +14,7 @@ __copyright__ = '© 2019 unsta projet youtube_api_search'
 
 from django.urls import path
 
-from . import views
+from ysearch.views import index
 
 app_name = 'ysearch'
-urlpatterns = [
-    path('', views.index, name='index'),
-]
+urlpatterns = [path('', index, name='index'),]
