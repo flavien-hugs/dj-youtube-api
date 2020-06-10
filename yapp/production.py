@@ -23,7 +23,7 @@ MIDDLEWARE += [
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['unsta-youtube.herokuapp.com']
 
 # APPLICATION DEFINITION
 INSTALLED_APPS += ['whitenoise.runserver_nostatic']
