@@ -2,10 +2,8 @@
 
 """
 __init__.py
-
 Crée par Flavien-hugs - 2019/12/05/.
 Copyright (c) 2019 unsta. All rights reserved.
-
 """
 
 import dj_database_url
