@@ -138,4 +138,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 YOUTUBE_DATA_API_KEY = get_env_variable('YOUTUBE_API')
-AIzaSyCA4yI-U2J2if2UAcWhrjWlGCcN84H3i_I
