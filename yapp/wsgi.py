@@ -15,9 +15,11 @@ __copyright__ = '© 2019 unsta projet youtube_api_search'
 import os
 import sys
 import os.path
+from whitenoise.django import DjangoWhiteNoise
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'yapp')))
 
 from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'yapp.settings')
 application = get_wsgi_application()
+application = DjangoWhiteNoise(application)

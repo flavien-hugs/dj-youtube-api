@@ -4,13 +4,29 @@ verify_ssl = true
 
 [packages]
 
+certifi="*"
+chardet="*"
 beautifulsoup4="*"
+dj-database-url="*"
+dj-static="*"
 Django="*"
 django-heroku="*"
 django-toolbelt="*"
 gunicorn="*"
+html5lib="*"
+httplib2="*"
+idna="*"
+isodate="*"
+psycopg2="*"
+pytz="*"
 requests="*"
+six="*"
+South="*"
+sqlparse="*"
+static3="*"
+urllib3="*"
 whitenoise="*"
+
 
 [requires]
 python_version = "3.8.3"
