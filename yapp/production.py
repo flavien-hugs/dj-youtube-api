@@ -7,10 +7,6 @@ Crée par Flavien-hugs - 2019/12/05/.
 Copyright (c) 2019 unsta. All rights reserved.
 
 """
-__author__ = 'Flavien-hugs <flavienhugs@pm.me>'
-__version__= '0.0.1'
-__copyright__ = '© 2019 unsta projet youtube_api_search'
-
 
 import dj_database_url
 from yapp.settings import *
@@ -27,4 +23,14 @@ MIDDLEWARE += [
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
-ALLOWED_HOSTS = ['manipyoutubeapi.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+
+# APPLICATION DEFINITION
+INSTALLED_APPS += ['whitenoise.runserver_nostatic']
+
+ALLOWED_HOSTS = ['*']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

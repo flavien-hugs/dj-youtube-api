@@ -37,7 +37,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = get_env_variable('SECRET_KEY', 'r*3_c)%6%n$+l1cd0yzem358h2a^rhm%*nxib83j#(6v)#!+al')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 
@@ -86,6 +86,7 @@ TEMPLATES = [
                 # Processeur de contexte du panier
                 'yapp.context.yapp',
             ],
+            'debug': DEBUG,
         },
     },
 ]
@@ -127,22 +128,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'fr-fr'
-
 TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
-
+USE_I18N = USE_L10N = USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-YOUTUBE_DATA_API_KEY = 'AIzaSyCA4yI-U2J2if2UAcWhrjWlGCcN84H3i_I'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+YOUTUBE_DATA_API_KEY = get_env_variable('YOUTUBE_API')
+AIzaSyCA4yI-U2J2if2UAcWhrjWlGCcN84H3i_I

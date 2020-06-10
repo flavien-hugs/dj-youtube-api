@@ -33,7 +33,7 @@ def index(request):
             'part' : 'snippet',
             'q' : request.POST['search'],
             'key' : settings.YOUTUBE_DATA_API_KEY,
-            'maxResults' : 8,
+            'maxResults' : 9,
             'type' : 'video'
         }
 
