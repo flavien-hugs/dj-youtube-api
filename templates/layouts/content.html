@@ -3,13 +3,12 @@
         <div class="theme-bg-shapes-right"></div>
         <div class="theme-bg-shapes-left"></div>
         <div class="container">
-            <h3 class="mb-2 text-white mb-3">Réducteur d’URL</h3>
-            <div class="section-intro text-white mb-3 single-col-max mx-auto">
-                Simplifiez vos liens et suivez les statistiques de clic avancées.
+            <h3 class="mb-2 text-white mb-3">Rechercher votre vidéo</h3>
+            <div class="section-intro text-white mb-3 single-col-max mx-auto">Trouver les neuf meilleurs vidéos de votre recherche
                 <p class="small">En utilisant notre service, vous acceptez les conditions d’utilisation et la politique de confidentialité.</p>
             </div>
             <div class="main-search-box pt-3 d-block mx-auto">
-                <form class="search-form w-100" method="post">
+                <form class="search-form w-100" method="POST">
                     {% csrf_token %}
                     <input type="search" placeholder="Taper votre recherche ici ..." name="search" class="form-control search-input" autocomplete="false" aria-label="search">
 
